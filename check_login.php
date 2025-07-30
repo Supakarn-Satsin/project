@@ -13,7 +13,7 @@ if ($username == "" || $password == "") {
 
   require 'connect.php';
 
-  $sql = "SELECT * FROM narak WHERE username='$username' AND password='$password'";
+  $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
   $result = $con->query($sql);
   $num = $result->num_rows;
   $row = mysqli_fetch_array($result);

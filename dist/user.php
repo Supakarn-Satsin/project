@@ -2,7 +2,7 @@
 
 require "../connect.php";
 
-$sql = "SELECT * FROM narak";
+$sql = "SELECT * FROM users";
 $result = $con->query($sql);
 ?>
 <main class="app-main">
